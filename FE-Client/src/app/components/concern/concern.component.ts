@@ -11,7 +11,7 @@ import { Router } from '@angular/router';
 })
 export class ConcernComponent implements OnInit {
   programs: any[] = [];
-  apiUrl = `${BARE_URL}/program/get-program-sort-register-date`;
+  apiUrl = `${BARE_URL}/program/get-public-programs`;
 
   constructor(
     private http: HttpClient,

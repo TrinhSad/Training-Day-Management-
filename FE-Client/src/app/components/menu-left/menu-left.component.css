@@ -86,10 +86,6 @@
   justify-content: space-between;
 }
 
-.dropdown-container a:hover {
-  color: #007bff;
-}
-
 .dropdown-btn::after {
   content: '\25BC';
   font-size: 12px;

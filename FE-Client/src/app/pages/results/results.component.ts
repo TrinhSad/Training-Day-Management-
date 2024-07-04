@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { CookieService } from 'ngx-cookie-service';
+import { BARE_URL } from 'src/app/utils/config';
 
 @Component({
   selector: 'app-results',
@@ -28,7 +29,7 @@ export class ResultsComponent implements OnInit {
       'Authorization': `Bearer ${accessToken}`
     });
 
-    this.http.get<any>(`http://localhost:4000/api/v1/user/get-history?MSSV=${MSSV}`, { headers }).subscribe(
+    this.http.get<any>(`${BARE_URL}/user/get-history?MSSV=${MSSV}`, { headers }).subscribe(
       (response) => {
         this.programs = response.programs;
       },

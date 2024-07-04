@@ -15,7 +15,7 @@ import { VAA_URL } from '../../utils/config';
   styleUrls: ['./forgot-password.component.css']
 })
 export class ForgotPasswordComponent {
-  VAA_URL = VAA_URL;
+  VAA_URL = VAA_URL;  
 
   MSSV: string = '';
   errorMessage: string = '';
