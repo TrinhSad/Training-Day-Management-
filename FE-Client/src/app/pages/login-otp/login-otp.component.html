@@ -6,14 +6,14 @@
         <input asp-for="ReturnUrl" type="hidden">
         <div class="form-login">
           <div class="text-center">
-            <a [href]="VAA_URL + '/home'"><img src="assets/images/logo-vaa.png" /></a>
+            <a [href]="VAA_URL + '/home'"><img src="assets/images/logo-vaa.png" alt="Logo VAA" /></a>
           </div>
           <p class="title">Đặt lại mật khẩu của bạn</p>
-          <p lang="quenmatkhau-label">
+          <p lang="en">
             Vui lòng nhập mã OTP đã được gửi đến email của bạn.
           </p>
           <p>
-            <input autocomplete="off" class="input" data-val="true" data-val-required="Nhập mã OTP" id="OTP" lang="quenmatkhau-placeholder"
+            <input autocomplete="off" class="input" data-val="true" data-val-required="Nhập mã OTP" id="OTP" lang="en"
               name="OTP" placeholder="Nhập mã OTP" required="required" type="text" [(ngModel)]="otp">
           </p>
           <div>
